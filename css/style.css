@@ -1,0 +1,254 @@
+*,
+li,
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+  box-sizing: border-box;
+}
+:root {
+  --color-primary: #2196f3;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+body {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  max-width: 1600px;
+}
+.ff-Raleway {
+}
+.headline {
+  border-bottom: 1px solid #ececec;
+}
+.headline > div {
+  /* height: 80px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headline > a:first-child {
+  color: black;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.nav-bar > ul > li {
+  display: inline;
+  padding-left: 50px;
+}
+.web-studio {
+  width: 145px;
+  height: 31px;
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 31px;
+}
+.color-blue {
+  color: #2196f3;
+}
+.mail-tel > li {
+  display: inline;
+  padding-left: 50px;
+  color: #757575;
+}
+.nav-bar-tel {
+  color: #757575;
+}
+.mail-tel > li > a:hover,
+.mail-tel > li > a:focus {
+  color: #212121;
+}
+/* section button */
+.section-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #2f303a;
+  height: 600px;
+}
+.h1 {
+  width: 650px;
+  height: 120px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+}
+.button {
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 30px;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.button a {
+  color: #ffffff;
+}
+/* основная  часть */
+.section-two {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.detail {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.detail h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: Roboto;
+}
+.detail p {
+  width: 270px;
+  height: 75px;
+  font-size: 15px;
+  line-height: 24px;
+  text-align: justify;
+  color: #757575;
+  letter-spacing: 0.03em;
+  font-family: Roboto;
+}
+/* чем мы занимаемся */
+.doing {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+/* .doing img {
+  padding-top: 50px;
+} */
+
+/* наша команда */
+.section-four {
+  background: #f5f4fa;
+}
+.section-four h2 {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 42px;
+  text-align: center;
+}
+.team {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+.section-four div > ul > li {
+  background-color: #ffffff;
+  text-align: center;
+}
+.section-four div > ul > li > p {
+  color: #757575;
+}
+/* подвал */
+.footer {
+  height: 100%;
+  background: #2f303a;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer > a,
+p {
+  color: #ffffff;
+}
+.address {
+  font-weight: normal;
+  font-size: 14px;
+}
+.footer-info {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer ul {
+  padding: 0;
+}
+.footer ul > li:first-child {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+/* page potfolio */
+.menu-button > ul {
+  display: flex;
+  justify-content: center;
+  margin-right: 8px;
+}
+.menu-button > input {
+  display: none;
+}
+.menu-button > ul > li:first-child > input {
+  background: var(--color-primary);
+  color: #ffffff;
+  cursor: pointer;
+}
+.menu-button > ul > li > input:hover {
+  background: var(--color-primary);
+  color: #ffffff;
+  cursor: pointer;
+}
+.menu-button ul > li > input {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-right: 8px;
+  margin-top: 94px;
+  margin-bottom: 50px;
+  border: none;
+  cursor: pointer;
+  line-height: 35px;
+  padding: 0px 15px;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.main > li {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+.main > li:nth-child(-n + 6) {
+  margin-bottom: 30px;
+}
+.main > li > h3 {
+  padding-left: 24px;
+  font-size: 18px;
+}
+.main > li > p {
+  color: #757575;
+  padding-left: 24px;
+}
+.h2-main {
+  position: absolute;
+  display: none;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
