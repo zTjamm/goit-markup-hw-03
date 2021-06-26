@@ -1,10 +1,15 @@
 /* глобальный стиль */
+* {
+  padding: 0;
+  margin: 0;
+}
 body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   max-width: 1600px;
   color: #212121;
+  margin: auto;
 }
 :root {
   --color-primary: #2196f3;
@@ -15,30 +20,42 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 /* хедер */
 header {
   border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
-.headline > div {
+.headline {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .headline li {
   display: inline;
   list-style: none;
 }
 .headline li:not(:last-child) {
-  padding-right: 50px;
+  margin-right: 50px;
 }
 .headline a {
   text-decoration: none;
 }
-
+.headline > ul > li {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .web-studio {
   width: 145px;
-  height: 31px;
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 31px;
@@ -46,6 +63,7 @@ header {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--color-primary);
+  margin-right: 93px;
 }
 .headline-name,
 .nav-portfolio,
@@ -56,7 +74,9 @@ header {
   color: var(--color-primary);
 }
 
-.nav-bar a {
+.nav-bar > ul > li > a {
+  /* display: block; */
+
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -79,12 +99,10 @@ header {
 }
 /* section button */
 .section-one {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   background: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 200px 452px;
+  /* padding-bottom: 200px; */
 }
 .section-one > button a {
   text-decoration: none;
@@ -92,8 +110,6 @@ header {
 }
 
 .h1 {
-  width: 696px;
-  height: 120px;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
@@ -101,12 +117,13 @@ header {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-white);
+  margin-bottom: 30px;
 }
 .button {
   font-weight: bold;
   font-size: 16px;
-  padding: 10px 32px;
   line-height: 30px;
+  padding: 10px 32px;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -136,6 +153,7 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-black);
+  margin-bottom: 10px;
 }
 .detail p {
   font-size: 14px;
@@ -155,6 +173,7 @@ header {
   letter-spacing: 0.03em;
   color: var(--color-black);
   margin-top: 94px;
+  margin-bottom: 50px;
 }
 .doing {
   display: flex;
@@ -167,8 +186,6 @@ header {
 /* наша команда */
 .section-three {
   background: #f5f4fa;
-  /* padding-top: 94px;
-  padding-bottom: 94px; */
 }
 .section-three li {
   list-style: none;
@@ -184,10 +201,12 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-black);
+  margin-bottom: 50px;
 }
 .team {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0;
 }
 .team > li {
@@ -196,41 +215,42 @@ header {
 }
 .team-footer {
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .team-footer > h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-black);
+  margin-bottom: 10px;
 }
 .team-footer > p {
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-gray);
 }
 
 /* подвал */
-.footer {
+footer {
   background: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer ul {
-  padding: 0;
-}
+
 .footer li {
   list-style: none;
 }
+
 .address {
   font-style: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--color-white);
+  margin-top: 20px;
 }
 .footer-name {
   color: var(--color-white);
